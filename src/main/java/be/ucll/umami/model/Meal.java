@@ -7,6 +7,8 @@ import javax.validation.constraints.*;
 
 public class Meal {
 
+    //Test jenkins autopush update deploy
+
     @NotNull(message = "De prijs mag niet leeg zijn.")
     @DecimalMin(value = "0.10", message = "In de prijs moet er een getal tussen 0,1 en 10,00 ingegeven worden.")
     @DecimalMax(value = "10.00", message = "In de prijs moet er een getal tussen 0,1 en 10,00 ingegeven worden.")
