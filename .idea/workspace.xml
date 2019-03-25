@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4383ed11-a5e2-4430-8d3f-d26af45eb95e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Umami/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/out/production/classes/be/ucll/umami/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/out/production/classes/be/ucll/umami/controller/UmamiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/out/production/classes/be/ucll/umami/model/Meal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/out/production/classes/be/ucll/umami/model/UmamiService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/java/be/ucll/umami/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/java/be/ucll/umami/controller/UmamiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/java/be/ucll/umami/model/Meal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/java/be/ucll/umami/model/UmamiService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/webapp/WEB-INF/jsp/meals.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/webapp/WEB-INF/jsp/mealsAdd.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/webapp/WEB-INF/jsp/mealsChange.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/webapp/WEB-INF/jsp/mealsDelete.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Umami/src/main/webapp/WEB-INF/jsp/mealsUpdate.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -39,8 +19,28 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -61,6 +61,74 @@
               <item name="umami" type="b2602c69:ProjectViewProjectNode" />
               <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="umami" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="umami" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="umami" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="umami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wietse_Vandeput_IPproject" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -72,6 +140,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553534257948" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -107,15 +176,24 @@
       <option name="presentableId" value="Default" />
       <updated>1553526702440</updated>
       <workItem from="1553526706393" duration="122000" />
-      <workItem from="1553526931844" duration="252000" />
+      <workItem from="1553526931844" duration="1802000" />
     </task>
+    <task id="LOCAL-00001" summary="jenkins test">
+      <created>1553534230292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553534230292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="374000" />
+    <option name="totallyTimeSpent" value="1924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
@@ -131,13 +209,13 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -156,6 +234,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="jenkins test" />
+    <option name="LAST_COMMIT_MESSAGE" value="jenkins test" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
