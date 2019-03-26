@@ -102,6 +102,10 @@ dependencies {
     // compile group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: '4.4.2'
     compile group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: ecjVersion
 
+    // https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.1.5.RELEASE'
+
+
     // for testing
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
