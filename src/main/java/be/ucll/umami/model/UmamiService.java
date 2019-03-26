@@ -1,41 +1,54 @@
 package be.ucll.umami.model;
 
+import be.ucll.umami.repository.DayMenuRepository;
+import be.ucll.umami.repository.MealRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
 public class UmamiService {
 
-    private List<Meal> meals = new ArrayList<Meal>();
-    private AtomicInteger nextId = new AtomicInteger();
+    @Autowired
+    MealRepository mealRepository ; // dependency injection of the repository
+
+    @Autowired
+    DayMenuRepository dayMenuRepository; // dependency injection of the repository
 
     public UmamiService() {
-        meals.add(new Meal(2.45, "Tomatensoep", "soep"));
-        meals.add(new Meal(4.15, "Konijn met pruimen", "dagschotel"));
-        meals.add(new Meal(4, "Spaghetti bolognese", "veggie"));
+    }
+
+    public List<DayMenu> getWeekMenu() {return dayMenuRepository.findAll();}
+
+    public void addDayMenu(DayMenu daymenu) {dayMenuRepository.save(daymenu);}
+
+    public DayMenu changeDayMenu(String date, DayMenu dM){
+        for(DayMenu dayM : dayMenuRepository.findAll()){
+            if(dayM.getDatum().equals(date)){
+                dayM.setSoep(dM.getSoep());
+                dayM.setDagschotel(dM.getDagschotel());
+                dayM.setVeggie(dM.getVeggie());
+                return dayM;
+            }
+        }
+        throw new IllegalArgumentException("No menu for this day!");
     }
 
     public List<Meal> getAllMeals(){
-        return meals;
+        return mealRepository.findAll();
     }
 
     public void addMeal(Meal meal) {
-        meals.add(meal);
+        mealRepository.save(meal);
     }
 
     public void deleteMeal(Meal meal) {
-        meals.remove(meal);
+        mealRepository.delete(meal);
     }
 
     public Meal findMealByDescription(String description) {
-        for(Meal meal : meals){
-            if(meal.getDescription().equals(description)){
-                return meal;
-            }
-        }
-        throw new IllegalArgumentException("Er staan geen gerechten op het menu met deze beschrijving.");
+        return findMealByDescription(description);
     }
 }

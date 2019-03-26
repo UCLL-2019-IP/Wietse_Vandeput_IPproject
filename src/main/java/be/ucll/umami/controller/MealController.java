@@ -13,10 +13,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import javax.validation.Valid;
 
 @Controller
-public class UmamiController implements WebMvcConfigurer {
+public class MealController implements WebMvcConfigurer {
 
     @Autowired
-    private UmamiService umamiService;
+    private UmamiService mealService;
 
     @GetMapping("/home")
     public String home() {
@@ -25,13 +25,13 @@ public class UmamiController implements WebMvcConfigurer {
 
     @GetMapping("/gerechten")
     public String meal(Model model){
-        model.addAttribute("meals", umamiService.getAllMeals());
+        model.addAttribute("meals", mealService.getAllMeals());
         return "meals";
     }
 
     @GetMapping("/gerechten/change")
     public String changeMeals(Model model){
-        model.addAttribute("meals", umamiService.getAllMeals());
+        model.addAttribute("meals", mealService.getAllMeals());
         return "mealsChange";
     }
 
@@ -47,8 +47,8 @@ public class UmamiController implements WebMvcConfigurer {
             return "mealsAdd";
         }
         else {
-            umamiService.addMeal(meal);
-            model.addAttribute("meals", umamiService.getAllMeals());
+            mealService.addMeal(meal);
+            model.addAttribute("meals", mealService.getAllMeals());
             return "mealsChange";
         }
     }
@@ -58,18 +58,13 @@ public class UmamiController implements WebMvcConfigurer {
         return "mealsUpdate";
     }
 
-//    @GetMapping("/gerechten/delete")
-//    public String deleteMeal(Model model){
-//       return "mealsDelete";
-//    }
-
     @GetMapping("/gerechten/delete")
     public String deleteMealByDescription(@RequestParam("description") String beschrijving,@RequestParam("confirmation") String conf, Model model){
-        Meal meal = umamiService.findMealByDescription(beschrijving);
+        Meal meal = mealService.findMealByDescription(beschrijving);
         model.addAttribute("meal", meal);
         if(conf.equals("true")){
-            umamiService.deleteMeal(meal);
-            model.addAttribute("meals", umamiService.getAllMeals());
+            mealService.deleteMeal(meal);
+            model.addAttribute("meals", mealService.getAllMeals());
             return "mealsChange";
         }
 
