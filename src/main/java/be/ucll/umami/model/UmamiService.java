@@ -18,7 +18,6 @@ public class UmamiService {
     DayMenuRepository dayMenuRepository; // dependency injection of the repository
 
     public UmamiService() {
-        
     }
 
     public List<DayMenu> getWeekMenu() {return dayMenuRepository.findAll();}
