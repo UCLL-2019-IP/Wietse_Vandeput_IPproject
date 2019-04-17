@@ -2,12 +2,19 @@ package be.ucll.umami.model;
 
 import org.hibernate.validator.constraints.Range;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.*;
-
+@Entity
 public class Meal {
 
-    //Test jenkins autopush update deploy 2
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer mealId;
 
     @NotNull(message = "De prijs mag niet leeg zijn.")
     @DecimalMin(value = "0.10", message = "In de prijs moet er een getal tussen 0,1 en 10,00 ingegeven worden.")
@@ -28,6 +35,14 @@ public class Meal {
         this.price = price;
         this.description = description;
         this.type = type;
+    }
+
+    public Integer getMealId() {
+        return mealId;
+    }
+
+    public void setMealId(Integer id) {
+        this.mealId = id;
     }
 
     public double getPrice() {

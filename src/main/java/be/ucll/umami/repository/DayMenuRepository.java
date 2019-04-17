@@ -11,6 +11,6 @@ import java.util.List;
 public interface DayMenuRepository extends JpaRepository<DayMenu, Integer> {
 
 
-    public List<DayMenu> getWeekMenu(String datum);
+    //public List<DayMenu> getWeekMenu(String datum);
 }
 

@@ -1,11 +1,17 @@
 package be.ucll.umami.model;
 
 
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+@Entity
 public class DayMenu {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer dayMenuId;
 
     @NotNull
     @NotEmpty
@@ -16,10 +22,16 @@ public class DayMenu {
     @Size(min=2, max=30)
     private String datum;
     @NotNull
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name="soup_id", referencedColumnName="mealId")
     private Meal soep;
     @NotNull
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name="dagschotel_id", referencedColumnName="mealId")
     private Meal dagschotel;
     @NotNull
+    @OneToOne (cascade = CascadeType.ALL)
+    @JoinColumn(name="veggie_id", referencedColumnName="mealId")
     private Meal veggie;
 
     public DayMenu() {}
@@ -31,6 +43,14 @@ public class DayMenu {
         this.setSoep(soep);
         this.setDagschotel(dagschotel);
         this.setVeggie(veggie);
+    }
+
+    public Integer getDayMenuId() {
+        return dayMenuId;
+    }
+
+    public void setDayMenuId(Integer id) {
+        this.dayMenuId = id;
     }
 
     public String getDag() {
