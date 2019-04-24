@@ -25,15 +25,15 @@ public class Application {
     @Order(1) // do this first
     CommandLineRunner runnerMeals(MealRepository repo){
         return MealArgs -> {
-            repo.save(new Meal(2.45, "Tomatensoep", "soep"));
-            repo.save(new Meal(4.15, "Konijn met pruimen", "dagschotel"));
-            repo.save(new Meal(4, "Spaghetti bolognese", "veggie"));
-            repo.save(new Meal(2.45, "Uiensoep", "soep"));
-            repo.save(new Meal(4.15, "Steak tartaar", "dagschotel"));
-            repo.save(new Meal(4, "Lasagne", "veggie"));
-            repo.save(new Meal(2.45, "Pompoensoep", "soep"));
-            repo.save(new Meal(4.15, "Wraps met zalm", "dagschotel"));
-            repo.save(new Meal(4, "Pasta Pesto", "veggie"));
+            repo.save(new Meal("2.45", "Tomatensoep", "soep"));
+            repo.save(new Meal("4.15", "Konijn met pruimen", "dagschotel"));
+            repo.save(new Meal("4.0", "Spaghetti bolognese", "veggie"));
+            repo.save(new Meal("2.45", "Uiensoep", "soep"));
+            repo.save(new Meal("4.15", "Steak tartaar", "dagschotel"));
+            repo.save(new Meal("4.0", "Lasagne", "veggie"));
+            repo.save(new Meal("2.45", "Pompoensoep", "soep"));
+            repo.save(new Meal("4.15", "Wraps met zalm", "dagschotel"));
+            repo.save(new Meal("4.0", "Pasta Pesto", "veggie"));
         };
     }
 
@@ -41,8 +41,8 @@ public class Application {
     @Order(2) // do this secondly
     CommandLineRunner runnerMenu(DayMenuRepository repo){
         return MenuArgs -> {
-            repo.save(new DayMenu("Maandag", "11-04-2019", new Meal(2.45, "Tomatensoep", "soep"), new Meal(4.15, "Steak tartaar", "dagschotel"), new Meal(4, "Pasta Pesto", "veggie")));
-            repo.save(new DayMenu("Dinsdag", "12-04-2019", new Meal(2.45, "Uiensoep", "soep"), new Meal(4.15, "Wraps met zalm", "dagschotel"), new Meal(4, "Spaghetti bolognese", "veggie")));
+            repo.save(new DayMenu("Maandag", "11-04-2019", new Meal("2.45", "Tomatensoep", "soep"), new Meal("4.15", "Steak tartaar", "dagschotel"), new Meal("4.0", "Pasta Pesto", "veggie")));
+            repo.save(new DayMenu("Dinsdag", "12-04-2019", new Meal("2.45", "Uiensoep", "soep"), new Meal("4.15", "Wraps met zalm", "dagschotel"), new Meal("4.0", "Spaghetti bolognese", "veggie")));
         };
     }
 }

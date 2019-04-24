@@ -54,8 +54,25 @@ public class MealController implements WebMvcConfigurer {
     }
 
     @GetMapping("/gerechten/update")
-    public String updateMeal(Model model){
+    public String updateMealForm(@RequestParam("description") String beschrijving, Model model){
+        Meal meal = mealService.findMealByDescription(beschrijving);
+        model.addAttribute("meal", meal);
         return "mealsUpdate";
+    }
+
+
+    @PutMapping("/gerechten/update")
+    public String updateMeal(@RequestParam("description") String beschrijving,@Valid Meal meal, BindingResult bindingResult, Model model){
+        Meal oldMeal = mealService.findMealByDescription(beschrijving);
+        if(bindingResult.hasErrors()){
+            model.addAttribute("errors", bindingResult.getFieldErrors());
+            return "mealsUpdate";
+        }
+        else {
+            mealService.updateMeal(1, meal);
+            model.addAttribute("meals", mealService.getAllMeals());
+            return "mealsChange";
+        }
     }
 
     @GetMapping("/gerechten/delete")

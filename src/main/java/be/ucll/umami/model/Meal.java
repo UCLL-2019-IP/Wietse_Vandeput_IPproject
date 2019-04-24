@@ -21,7 +21,7 @@ public class Meal {
     @DecimalMax(value = "10.00", message = "In de prijs moet er een getal tussen 0,1 en 10,00 ingegeven worden.")
     private double price;
 
-    @NotEmpty(message =  "De omschrijving mag niet leeg zijn.")
+    @NotEmpty(message =  "De beschrijving mag ni et leeg zijn.")
     @Size(min=4, max=50, message = "In de beschrijving moeten er minimum 4 en maximum 50 tekens ingegeven worden.")
     private String description;
 
@@ -31,8 +31,8 @@ public class Meal {
     public Meal() {
     }
 
-    public Meal(double price, String description, String type) {
-        this.price = price;
+    public Meal(String price, String description, String type) {
+        setPrice(price);
         this.description = description;
         this.type = type;
     }
@@ -49,8 +49,15 @@ public class Meal {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setPrice(String price) {
+        try
+        {
+            this.price = (double) Double.parseDouble(price.trim());
+        }
+        catch(NumberFormatException e)
+        {
+            this.price = 0;
+        }
     }
 
     public String getDescription() {

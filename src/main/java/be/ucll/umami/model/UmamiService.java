@@ -49,6 +49,12 @@ public class UmamiService {
     }
 
     public Meal findMealByDescription(String description) {
-        return findMealByDescription(description);
+        return mealRepository.findByDescription(description).get(0);
+    }
+
+    public void updateMeal(int id, Meal changedMeal) {
+        changedMeal.setMealId(id); // use id from url, so people can't mess up
+        // if row exists with this id, row is updated, otherwise it's created
+        mealRepository.save(changedMeal); // all we need to do to change a feedback
     }
 }
