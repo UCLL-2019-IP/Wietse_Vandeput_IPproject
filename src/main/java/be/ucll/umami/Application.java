@@ -20,6 +20,8 @@ public class Application {
         SpringApplication.run(Application.class);
     }
 
+    //github test
+
     // use this to fill up the database from the start
     @Bean
     @Order(1) // do this first
