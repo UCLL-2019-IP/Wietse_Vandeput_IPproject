@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4383ed11-a5e2-4430-8d3f-d26af45eb95e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/umami/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/umami/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/umami/model/Meal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/umami/model/Meal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/be/ucll/umami/model/UmamiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/be/ucll/umami/model/UmamiService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/umami/controller/MealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/umami/controller/MealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/UmamiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/UmamiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/umami/repository/MealRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/umami/repository/MealRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mealsChange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mealsChange.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mealsUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mealsUpdate.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/controller/MealController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="855">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -95,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="43" column="163" selection-start-line="43" selection-start-column="163" selection-end-line="43" selection-end-column="163" />
+            <state relative-caret-position="285">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#641#642#0" expanded="true" />
@@ -167,13 +158,13 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/repository/DayMenuRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/DayMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mealsUpdate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/mealsChange.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/repository/MealRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/UmamiService.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/model/Meal.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/controller/MealController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java" />
       </list>
     </option>
   </component>
@@ -366,7 +357,7 @@
       <workItem from="1555507466303" duration="2465000" />
       <workItem from="1555870198520" duration="11269000" />
       <workItem from="1556100443032" duration="378000" />
-      <workItem from="1556109968109" duration="601000" />
+      <workItem from="1556109968109" duration="1431000" />
     </task>
     <task id="LOCAL-00001" summary="jenkins test">
       <created>1553534230292</created>
@@ -410,11 +401,25 @@
       <option name="project" value="LOCAL" />
       <updated>1555509658239</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="delete works now but still working on update with the h2 db">
+      <created>1556111810456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556111810456</updated>
+    </task>
+    <task id="LOCAL-00008" summary="github test">
+      <created>1556112976099</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556112976099</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39191000" />
+    <option name="totallyTimeSpent" value="40021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="29" width="1920" height="1051" extended-state="6" />
@@ -440,7 +445,7 @@
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4994664" weight="0.3278328" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" sideWeight="0.4994664" visible="true" weight="0.3278328" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32785088" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50053364" side_tool="true" weight="0.3278328" />
@@ -503,7 +508,9 @@
     <MESSAGE value="doesnt work for some weird reason, something to do with modules, i think springframeworks.data and probably just bad structured project?&#10;&#10;didnt push the libraries so it wont even work now because of errors, check tomorrow with teacher for other solution?" />
     <MESSAGE value="still not working thanks to the bean thing but dependencies fixed" />
     <MESSAGE value="should be working now, only need to add tests, jenkins and some minor features, also delete currently broken" />
-    <option name="LAST_COMMIT_MESSAGE" value="should be working now, only need to add tests, jenkins and some minor features, also delete currently broken" />
+    <MESSAGE value="delete works now but still working on update with the h2 db" />
+    <MESSAGE value="github test" />
+    <option name="LAST_COMMIT_MESSAGE" value="github test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/model/WeekMenu.java" />
@@ -615,18 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="43" column="163" selection-start-line="43" selection-start-column="163" selection-end-line="43" selection-end-column="163" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/meals.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -642,9 +637,13 @@
         <state relative-caret-position="225">
           <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding>
+            <element signature="e#1815#1816#0" expanded="true" />
             <element signature="e#1849#1850#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
             <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1980#1981#0" expanded="true" />
             <element signature="e#2007#2008#0" expanded="true" />
+            <element signature="e#2047#2048#0" expanded="true" />
             <element signature="e#2079#2080#0" expanded="true" />
           </folding>
         </state>
@@ -652,10 +651,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/controller/MealController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="855">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/umami/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
           </folding>
         </state>
       </provider>
