@@ -53,23 +53,23 @@ public class MealController implements WebMvcConfigurer {
         }
     }
 
-    @GetMapping("/gerechten/update")
-    public String updateMealForm(@RequestParam("description") String beschrijving, Model model){
+    @GetMapping(value = "/gerechten/update", params = {"description"})
+    public String updateMealForm(@RequestParam(value = "description") String beschrijving, Model model){
         Meal meal = mealService.findMealByDescription(beschrijving);
         model.addAttribute("meal", meal);
         return "mealsUpdate";
     }
 
 
-    @PutMapping("/gerechten/update")
-    public String updateMeal(@RequestParam("description") String beschrijving,@Valid Meal meal, BindingResult bindingResult, Model model){
+    @PostMapping("/gerechten/update")
+    public String updateMeal(String beschrijving,@Valid Meal meal, BindingResult bindingResult, Model model){
         Meal oldMeal = mealService.findMealByDescription(beschrijving);
         if(bindingResult.hasErrors()){
             model.addAttribute("errors", bindingResult.getFieldErrors());
             return "mealsUpdate";
         }
         else {
-            mealService.updateMeal(1, meal);
+            mealService.updateMeal(meal);
             model.addAttribute("meals", mealService.getAllMeals());
             return "mealsChange";
         }
@@ -80,7 +80,7 @@ public class MealController implements WebMvcConfigurer {
         Meal meal = mealService.findMealByDescription(beschrijving);
         model.addAttribute("meal", meal);
         if(conf.equals("true")){
-            mealService.deleteMeal(meal.getMealId());
+            mealService.deleteMeal(meal);
             model.addAttribute("meals", mealService.getAllMeals());
             return "mealsChange";
         }

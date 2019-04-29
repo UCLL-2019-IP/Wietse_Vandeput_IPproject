@@ -13,7 +13,7 @@ public interface MealRepository extends JpaRepository<Meal, Integer> {
 
     // new way to find all feedbacks related to a specific topic
     // these are actually filters on your data
-    public List<Meal> findByDescription(String description);
+    Meal findByDescription(String description);
 
 
 }

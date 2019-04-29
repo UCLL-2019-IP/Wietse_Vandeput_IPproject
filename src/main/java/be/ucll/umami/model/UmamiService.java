@@ -43,17 +43,15 @@ public class UmamiService {
         mealRepository.save(meal);
     }
 
-    public void deleteMeal(int id) {
-        mealRepository.deleteById(id);
+    public void deleteMeal(Meal meal) {
+        mealRepository.delete(meal);
     }
 
     public Meal findMealByDescription(String description) {
-        return mealRepository.findByDescription(description).get(0);
+        return mealRepository.findByDescription(description);
     }
 
-    public void updateMeal(int id, Meal changedMeal) {
-        changedMeal.setMealId(id); // use id from url, so people can't mess up
-        // if row exists with this id, row is updated, otherwise it's created
-        mealRepository.save(changedMeal); // all we need to do to change a feedback
+    public void updateMeal(Meal meal) {
+        mealRepository.save(meal); // all we need to do to change a feedback
     }
 }
