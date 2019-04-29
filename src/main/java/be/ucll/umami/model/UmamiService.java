@@ -10,7 +10,6 @@ import java.util.List;
 
 @Service
 public class UmamiService {
-  
     @Autowired
     MealRepository mealRepository ; // dependency injection of the repository
 
