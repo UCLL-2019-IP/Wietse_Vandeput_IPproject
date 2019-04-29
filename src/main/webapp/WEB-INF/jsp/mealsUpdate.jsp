@@ -26,7 +26,7 @@
         </c:forEach>
     </c:if>
 
-    <form method="post" action="/gerechten/add">
+    <form method="put" action="/gerechten/update">
         <p>
             <label>Beschrijving</label>
             <input type="text" name="description" value="${meal.description}"/>

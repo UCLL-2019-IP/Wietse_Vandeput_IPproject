@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 public class UmamiService {
-
+  
     @Autowired
     MealRepository mealRepository ; // dependency injection of the repository
 
@@ -44,8 +44,8 @@ public class UmamiService {
         mealRepository.save(meal);
     }
 
-    public void deleteMeal(Meal meal) {
-        mealRepository.delete(meal);
+    public void deleteMeal(int id) {
+        mealRepository.deleteById(id);
     }
 
     public Meal findMealByDescription(String description) {

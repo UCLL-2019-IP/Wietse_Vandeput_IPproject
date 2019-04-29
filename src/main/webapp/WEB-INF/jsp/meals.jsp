@@ -32,6 +32,7 @@
     <th>Description</th>
     <th>Price</th>
     <th>Type</th>
+    <th>Id</th>
     </thead>
     <tbody>
     <c:forEach var="meal" items="${meals}">
@@ -39,6 +40,7 @@
             <td>${meal.description}</td>
             <td>€ ${meal.price}</td>
             <td>${meal.type}</td>
+            <td>${meal.mealId}</td>
         </tr>
     </c:forEach>
     </tbody>

@@ -80,7 +80,7 @@ public class MealController implements WebMvcConfigurer {
         Meal meal = mealService.findMealByDescription(beschrijving);
         model.addAttribute("meal", meal);
         if(conf.equals("true")){
-            mealService.deleteMeal(meal);
+            mealService.deleteMeal(meal.getMealId());
             model.addAttribute("meals", mealService.getAllMeals());
             return "mealsChange";
         }
