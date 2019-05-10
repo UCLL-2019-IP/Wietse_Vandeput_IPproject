@@ -29,9 +29,11 @@
     <c:otherwise>
         <table>
             <thead>
+            <tr>
             <th>Description</th>
             <th>Price</th>
             <th>Type</th>
+            </tr>
             </thead>
             <tbody>
             <c:forEach var="meal" items="${meals}">
