@@ -1,20 +1,19 @@
 package be.ucll.umami.controller;
 
 import be.ucll.umami.model.DayMenu;
-import be.ucll.umami.model.UmamiService;
+import be.ucll.umami.model.DayMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.validation.Valid;
 import java.util.List;
 
-@RestController
+@RestController("menuController")
 public class MenuController {
 
     @Autowired
-    private UmamiService menuService;
+    private DayMenuService menuService;
 
 
     @GetMapping("weekmenu")
@@ -22,20 +21,33 @@ public class MenuController {
         return menuService.getWeekMenu();
     }
 
-    @PostMapping("weekmenu/add")
-    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping("dagmenu")
+    public List<DayMenu> getDagMenus() {
+        return menuService.getAllDayMenus();
+    }
+
+    @PostMapping("dagmenu/add")
+    @ResponseStatus(HttpStatus.OK)
     public List<DayMenu> createNewDayMenu(@RequestBody @Valid DayMenu dayMenu) {
         menuService.addDayMenu(dayMenu);
-        return menuService.getWeekMenu();
+        return menuService.getAllDayMenus();
     }
 
     @PutMapping("dagmenu/change/{date}")
-    @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
-    public DayMenu editSpecificWholeFeedback(@PathVariable("date") String date, @RequestBody @Valid DayMenu changedDayMenu) {
-        return menuService.changeDayMenu(date, changedDayMenu);
+    public List<DayMenu> editSpecificDayMenu(@PathVariable("date") String date, @RequestBody @Valid DayMenu changedDayMenu) {
+        menuService.changeDayMenu(date, changedDayMenu);
+        return menuService.getAllDayMenus();
     }
 
-    @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Requested feedback not found!")
+
+    @PostMapping("dagmenu/delete/{date}")
+    public List<DayMenu> deleteSpecificDayMenu(@PathVariable("date") String date) {
+        DayMenu dM = menuService.findDayMenuById(date);
+        menuService.deleteDayMenu(dM);
+        return menuService.getAllDayMenus();
+    }
+
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Requested menu not found!")
     @ExceptionHandler(value = IllegalArgumentException.class)
     public void badIdExceptionHandler() {
     }

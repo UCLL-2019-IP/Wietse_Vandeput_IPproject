@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Add meals</title>
+    <title>Update meals</title>
 
     <link href="/./css/styles.css" rel="stylesheet">
 
@@ -19,14 +19,15 @@
 
 </header>
 <main>
-    <h1>Add meals</h1>
+    <h1>Update meals</h1>
+    <div class="content">
     <c:if test="${! errors.isEmpty()}">
         <c:forEach var="error" items="${errors}">
-            <p>${error.defaultMessage}</p>
+            <p class="error">${error.defaultMessage}</p>
         </c:forEach>
     </c:if>
 
-    <form method="POST" action="/gerechten/update">
+    <form method="POST" action="/gerechten/update" class="table">
         <input type="hidden" name="mealId" value="${ meal.mealId }">
         <p>
             <label>Beschrijving</label>
@@ -53,6 +54,7 @@
             <input type="submit" value="Cancel"/>
         </p>
     </form>
+</div>
 </main>
 </body>
 </html>

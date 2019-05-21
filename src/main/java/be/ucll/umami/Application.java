@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 @SpringBootApplication
 public class Application {
-
+/**
     Meal meal1 = new Meal("2.45", "Tomatensoep", "soep");
     Meal meal2 = new Meal("4.15", "Konijn met pruimen", "dagschotel");
     Meal meal3 = new Meal("4.0", "Spaghetti bolognese", "veggie");
@@ -25,11 +25,11 @@ public class Application {
     Meal meal7 = new Meal("2.45", "Pompoensoep", "soep");
     Meal meal8 = new Meal("4.15", "Wraps met zalm", "dagschotel");
     Meal meal9 = new Meal("4.0", "Pasta Pesto", "veggie");
-
+**/
     public static void main(String[] args) {
-        SpringApplication.run(Application.class);
+        SpringApplication.run(Application.class, args);
     }
-
+/**
     // use this to fill up the database from the start
     @Bean
     @Order(1) // do this first
@@ -48,5 +48,5 @@ public class Application {
             repo.save(new DayMenu("Maandag", "11-04-2019", meal4, meal5, meal6));
             repo.save(new DayMenu("Dinsdag", "12-04-2019", meal7, meal8, meal9));
         };
-    }
+    }**/
 }

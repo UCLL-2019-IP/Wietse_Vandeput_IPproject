@@ -13,7 +13,7 @@
 </head>
 <body>
 <ul>
-    <li><a href="/gerechten/">View meals</a></li>
+    <li><a href="/gerechten/" class="button">View meals</a></li>
 </ul>
 
 </body>

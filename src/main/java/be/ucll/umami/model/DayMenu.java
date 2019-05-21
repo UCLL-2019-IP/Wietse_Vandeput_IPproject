@@ -8,18 +8,14 @@ import javax.validation.constraints.Size;
 
 @Entity
 public class DayMenu {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer dayMenuId;
-
     @NotNull
     @NotEmpty
-    @Size(min=2, max=30)
+    @Size(min=6, max=12,message = "The day must be a valid weekday.")
     private String dag;
+    @Id
     @NotNull
     @NotEmpty
-    @Size(min=2, max=30)
+    @Size(min=10, max=10 ,message = "The date must be in format dd-MM-yyyy.")
     private String datum;
     @NotNull
     @OneToOne (cascade = CascadeType.ALL)
@@ -43,14 +39,6 @@ public class DayMenu {
         this.setSoep(soep);
         this.setDagschotel(dagschotel);
         this.setVeggie(veggie);
-    }
-
-    public Integer getDayMenuId() {
-        return dayMenuId;
-    }
-
-    public void setDayMenuId(Integer id) {
-        this.dayMenuId = id;
     }
 
     public String getDag() {

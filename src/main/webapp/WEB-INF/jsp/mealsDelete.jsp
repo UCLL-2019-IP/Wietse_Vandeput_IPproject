@@ -24,11 +24,13 @@
 </header>
 <main>
 <h1>Delete meals</h1>
+    <div class="content">
     <p>Bent u zeker dat u het gerecht ${meal.description} wilt verwijderen?</p>
 <ul>
-    <li><a href="<c:url value="/gerechten/delete"><c:param name="description" value="${meal.description}"></c:param><c:param name="confirmation" value="true"></c:param></c:url>">yes</a></li>
-    <li><a href="/gerechten/change">no</a></li>
+    <li><a href="<c:url value="/gerechten/delete"><c:param name="description" value="${meal.description}"></c:param><c:param name="confirmation" value="true"></c:param></c:url>" class="button">yes</a></li>
+    <li><a href="/gerechten/change" class="button">no</a></li>
 </ul>
+    </div>
 </main>
 </body>
 </html>

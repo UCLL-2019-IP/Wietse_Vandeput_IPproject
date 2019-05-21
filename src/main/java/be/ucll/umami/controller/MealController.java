@@ -1,7 +1,7 @@
 package be.ucll.umami.controller;
 
 import be.ucll.umami.model.Meal;
-import be.ucll.umami.model.UmamiService;
+import be.ucll.umami.model.MealService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -12,11 +12,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.validation.Valid;
 
-@Controller
+@Controller("mealController")
 public class MealController implements WebMvcConfigurer {
 
     @Autowired
-    private UmamiService mealService;
+    private MealService mealService;
 
     @GetMapping("/home")
     public String home() {

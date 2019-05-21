@@ -22,18 +22,18 @@
 </header>
 <main>
 <h1>Meals</h1>
+    <div class="content">
 <c:choose>
 <c:when test="${meals.isEmpty()}">
     <p>Er staan geen gerechten op het menu.</p>
 </c:when>
 <c:otherwise>
-<table>
+<table class="table">
     <thead>
     <tr>
     <th>Description</th>
     <th>Price</th>
     <th>Type</th>
-    <th>Id</th>
     </tr>
     </thead>
     <tbody>
@@ -42,13 +42,13 @@
             <td>${meal.description}</td>
             <td>€ ${meal.price}</td>
             <td>${meal.type}</td>
-            <td>${meal.mealId}</td>
         </tr>
     </c:forEach>
     </tbody>
 </table>
 </c:otherwise>
 </c:choose>
+    </div>
 </main>
 </body>
 </html>

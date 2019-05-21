@@ -22,13 +22,14 @@
 </header>
 <main>
 <h1>Add meals</h1>
+    <div class="content">
     <c:if test="${! errors.isEmpty()}">
         <c:forEach var="error" items="${errors}">
-            <p>${error.defaultMessage}</p>
+            <p class="error">${error.defaultMessage}</p>
         </c:forEach>
     </c:if>
 
-    <form method="post" action="/gerechten/add">
+    <form method="post" action="/gerechten/add" class="table">
         <p>
             <label>Beschrijving</label>
             <input type="text" name="description" />
@@ -46,14 +47,15 @@
             </select>
         </p>
         <p>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" class="button"/>
         </p>
     </form>
     <form method="get" action="/gerechten/change">
         <p>
-            <input type="submit" value="Cancel"/>
+            <input type="submit" value="Cancel" class="button"/>
         </p>
     </form>
+    </div>
 </main>
 </body>
 </html>
