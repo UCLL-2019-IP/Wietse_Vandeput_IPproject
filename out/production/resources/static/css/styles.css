@@ -135,9 +135,14 @@ div.content {
 }
 
 td, th {
+    font-family: arial, sans-serif;
     padding:8px;
     text-align: left;
     border: 1px solid black;
+}
+
+th{
+    font-weight: bold;
 }
 
 .table {
